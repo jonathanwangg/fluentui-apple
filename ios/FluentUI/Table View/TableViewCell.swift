@@ -1056,6 +1056,18 @@ open class TableViewCell: UITableViewCell {
         isUsingCustomTextColors = true
     }
 
+    /// To set the highlighted text color for title label
+    /// - Parameter color: UIColor to set
+    @objc public func setTitleLabelHighlightedTextColor(color: UIColor) {
+        titleLabel.highlightedTextColor = color
+    }
+
+    /// To set the highlighted text color for subtitle label
+    /// - Parameter color: UIColor to set
+    @objc public func setSubTitleLabelHighlightedTextColor(color: UIColor) {
+        subtitleLabel.highlightedTextColor = color
+    }
+
     /// To set color for footer label
     /// - Parameter color: UIColor to set
     public func setFooterLabelTextColor(color: UIColor) {
